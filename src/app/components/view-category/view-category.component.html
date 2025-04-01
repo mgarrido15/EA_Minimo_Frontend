@@ -1,0 +1,21 @@
+<div class="view-category-container">
+  <h2>Detalles de la Categoría</h2>
+
+  <div class="category-detail">
+    <label for="categoryId">ID:</label>
+    <span id="categoryId">{{ category._id }}</span>
+  </div>
+
+  <div class="category-detail">
+    <label for="categoryName">Nombre:</label>
+    <span id="categoryName">{{ category.name }}</span>
+  </div>
+
+  <div class="category-detail">
+    <label for="categoryDescription">Descripción:</label>
+    <span id="categoryDescription">{{ category.description }}</span>
+  </div>
+  <button (click)="goBack()">Volver</button>
+</div>
+
+ 

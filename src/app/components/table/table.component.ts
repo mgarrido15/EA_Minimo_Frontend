@@ -195,5 +195,10 @@ ViewProfile(item: any) {
   this.router.navigate(['/profile', item._id]);
 }
 
+CreateCategory()
+{
+  this.router.navigate(['/create-category']);
+}
+
 
 }

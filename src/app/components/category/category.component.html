@@ -1,0 +1,40 @@
+<div class="create-container">
+    <h2>Crear Categoria</h2>
+      <label for="name">Nombre</label>
+      <input id="categoryName" type="text" placeholder="Nombre" [(ngModel)]="categoryName" />
+  
+      <label for="description">Descripcion</label>
+      <input id="categoryDescription" type="text" placeholder="Descripcion" [(ngModel)]="categoryDescription" />
+
+      <button type="button" (click)="CreateCategory()">Crear</button>
+  </div>
+
+<div class="create-container">
+    <h2>Eliminar Categoria</h2>
+      <label for="name">ID Categoria</label>
+      <input id="IdCategory" type="text" placeholder="ID" [(ngModel)]="IdCategory" />
+  
+      <button type="button" (click)="DeleteCategory()">Eliminar</button>
+</div>
+
+<div class="create-container">
+    <h2>Modificar Categoria</h2>
+
+    <label for="name">ID Categoria</label>
+    <input id="IdCategory" type="text" placeholder="ID" [(ngModel)]="IdCategory" />
+
+    <label for="name">Nombre</label>
+    <input id="categoryName" type="text" placeholder="Nombre" [(ngModel)]="categoryName" />
+  
+    <label for="description">Descripcion</label>
+    <input id="categoryDescription" type="text" placeholder="Descripcion" [(ngModel)]="categoryDescription" />
+
+    <button type="button" (click)="UpdateCategory()">Modificar</button>
+</div>
+
+<div class="create-container">
+    <h2>Buscar Categoria</h2>
+    <label for="name">ID Categoria</label>
+    <input id="IdCategory" type="text" placeholder="ID" [(ngModel)]="IdCategory" />
+    <button type="button" (click)="GetCategory()">Buscar</button>
+  </div>

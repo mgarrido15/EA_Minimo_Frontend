@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { EditUserComponent } from './components/edit-user/edit-user.component';
+import { CreateCategoryComponent } from './components/category/category.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductComponent } from './components/product/product.component';
 import { CreateUserComponent } from './components/create-user/create-user.component';
+import { ViewCategoryComponent } from './components/view-category/view-category.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -16,7 +18,9 @@ export const routes: Routes = [
   {path: 'profile/:id', component: ProfileComponent},
   { path: 'home', component: HomeComponent },
   { path: 'product/:id', component: ProductComponent },
-  { path: 'createuser', component: CreateUserComponent }
+  { path: 'createuser', component: CreateUserComponent },
+  {path: 'create-category', component: CreateCategoryComponent},
+  {path: 'view-category/:id', component: ViewCategoryComponent}
   // Altres rutes...
 ];
 

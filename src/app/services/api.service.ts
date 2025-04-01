@@ -66,4 +66,12 @@ export class ApiService {
   searchUsers(criteria: any): Observable<any> {
     return this.http.post(`${this.apiUrl}/search-users`, criteria);
   }
+
+  createCategory(category: any): Observable<any> {
+    const token = localStorage.getItem('token');
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.post<any>(`${this.apiUrl}/category`, category, { headers });
+}
+
+
 }

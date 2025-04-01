@@ -1,0 +1,38 @@
+.view-category-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.view-category-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.category-detail {
+  margin-bottom: 1rem;
+}
+
+.category-detail label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.category-detail span,
+.category-detail ul {
+  display: block;
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.category-detail ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
